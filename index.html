@@ -10,7 +10,7 @@
 <body>
     <header>
         <div class="b1">
-            <img src="logo.jpg" alt="Matematyka">
+            <img src="logo.jpg" alt="Matematyka" style="width: 100%; height: auto;">
         </div>
         <div class="b2">
             <h1>Pomocnik matematyczny</h1>
@@ -42,6 +42,7 @@
             <button onclick="potegowanie()">A^B</button>
         </div>
         <div class="prawy">
+            <h3>Operacje</h3>
             <ul>
                 <li>dodawanie</li>
                 <li>odejmowanie</li>
@@ -77,8 +78,12 @@
         function dzielenie() {
             var liczbaA = parseInt(document.getElementById('liczbaA').value);
             var liczbaB = parseInt(document.getElementById('liczbaB').value);
-            var wynik = liczbaA / liczbaB;
-            document.getElementById('wynik').innerText = `Wynik dzielenia to ${wynik}`;
+            if (liczbaB !== 0) {
+                var wynik = liczbaA / liczbaB;
+                document.getElementById('wynik').innerText = `Wynik dzielenia to ${wynik}`;
+            } else {
+                document.getElementById('wynik').innerText = "Nie można dzielić przez zero!";
+            }
         }
         function potegowanie() {
             var liczbaA = parseInt(document.getElementById('liczbaA').value);
