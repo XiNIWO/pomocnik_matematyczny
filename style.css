@@ -1,122 +1,56 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #d1a69b;
-    color: #fff;
-    margin: 0;
-    padding: 0;
+* {
+    font-family: Tahoma, sans-serif;
+    margin: 0 auto;
+    color: white;
 }
 
-/* Header styling */
-header {
-    display: flex;
-    align-items: center;
-    background-color: #663300;
-    padding: 10px;
-}
-
-header .b1 img {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-}
-
-header .b2 h1 {
-    margin: 0;
-    font-size: 1.5em;
-}
-
-header .b3, header .b4 {
-    margin-left: 20px;
-}
-
-header .b3 a, header .b4 a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1em;
-}
-
-header .b3 a:hover, header .b4 a:hover {
-    text-decoration: underline;
-}
-
-/* Main content styling */
+header,
 main {
+    clear: both;
     display: flex;
-    padding: 20px;
+    flex-direction: row;
 }
 
-/* Left section styling (for inputs and buttons) */
-.lewy {
-    flex: 1;
-    background-color: #b5651d;
-    padding: 20px;
-    border-radius: 8px;
+.b1,
+.b3,
+.b4 {
+    background-color: #983713;
+    width: 17%;
+    height: 100px;
 }
 
-.lewy h3 {
-    margin-top: 0;
-}
-
-.lewy label {
-    display: block;
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-.lewy input[type="number"] {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    border: none;
-    border-radius: 5px;
-}
-
-.lewy button {
-    padding: 10px;
-    margin: 5px 5px 5px 0;
-    font-size: 1em;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: #333;
-    color: #fff;
-}
-
-.lewy button:hover {
-    background-color: #555;
-}
-
-/* Right section styling (for the list of operations) */
-.prawy {
-    flex: 0.5;
-    padding-left: 20px;
-}
-
-.prawy ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.prawy ul li {
-    padding: 5px 0;
-    font-weight: bold;
-}
-
-#wynik {
-    display: block;
-    font-size: 1.2em;
-    margin-top: 10px;
-    color: #ffd700; /* Gold color for result text */
-}
-
-/* Footer styling */
-footer {
+.b2 {
+    background-color: #983713;
+    width: 40%;
+    height: 100px;
     text-align: center;
-    padding: 10px;
-    background-color: #663300;
-    color: #fff;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+}
+
+.levy {
+    background-color: #f7f750;
+    width: 80%;
+    height: 500px;
+}
+
+.prawy {
+    background-color: #f7f750;
+    width: 20%;
+    height: 500px;
+}
+
+input {
+    color: orange;
+}
+
+button {
+    background-color: #d3d3d3;
+    color: #2f2f2f;
+    border: 2px solid #2f2f2f;
+    margin: 5px;
+    padding: 10px 30px;
+}
+
+footer {
+    background-color: #983713;
+    text-align: right;
 }
